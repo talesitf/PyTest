@@ -37,6 +37,9 @@ async def main():
                         text = ''
                     elif event.key == pg.K_BACKSPACE:
                         text = text[:-1]
+                    elif event.key == pg.K_KP_ENTER:
+                        with open("emails.txt", "a") as arquivo:
+                            arquivo.write(text)
                     else:
                         text += event.unicode
 
