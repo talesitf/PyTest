@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "perguntas-e-respostas-394021",
+  "private_key_id": "b3e02f380b8b42f20f1c8209b7ec3cff4e60b06b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDsPN/4Cg1mPgwx\n4wTV99M6LWx2PIClf/Ws+GM5QOMv4MO31CxstR0CnYeB0XYkbhbmXEQgekk/sVLg\nb6RPdsGKNsJl0J/uYrK+6MXuT04weqxBBsf6YP+qt0x4u0GBxWQiopoSNWcTt8Sx\nOvg9QVePmFtbRnNjg/s7P4EZx0vyGlpub3otXxLoROcgvRs2/aYmuVMcRFYYE+XA\neklbJfxIw4mZeVtmbVae9Hhs041xD/B+PP/KdNfgmhH9xj/0dF/L86KCxgCXAWLI\nrIO8cR1kiwbR/Yryv4gJpD7uisXIT3gszmyuC1LUNL8QBXaVgSNwmCNiJxErmo3H\njGG4bOSvAgMBAAECggEABdomNDdPiKpd0/iLPJ+0iFrqtm0eRLtMQzot/xOX7S40\nuv+TEChWbSOo4TLmqdVeVNuRRnqxCNZkNrIdUGihN8LOgwYtiBLC2c7bZGFrjvDj\nBoNb/dxcSQbcaps87rGMnv0HMw9Gm+rwAPH0h1PwjtqX3MV8g0kYNqoGkTRqMbeg\nOPgEy1Qg91BUI4WxS9zr3HIDHeVvDZoOv5AU7TAQ9cE9bCkdpVKMKTCBYu5pdaBG\nD9IaLNk35z2CX07/xrHDiJgdHm5hkNP84hLZhSv3d8mwHiW15fBVTPsi0CQBSJUF\nMB1YJsuq9+WMMmLhCpwrNkjXH3uIE28foUKX52BbNQKBgQD7XR8xluu+CXgrOSt6\n20q84MEdSg0FyK0WqG74LyTDYG33xI6oI5T/OEfn4LC5p2+MZQvudsRovU3cBhQO\n9sbo20mSWI514zEW3tkG99aAtp88/ZjzO+uDxrsOk1JPr2vNqBddoUwugR+WWaFt\n7Grp9UiypRuyDVN2scAnfDiBvQKBgQDwmFT4+zkFU+mZAEXjSUtbOJYe+K7Yn1R2\nYK87NhkCYIlrc4p29Osv8VS5ANqgD64oovtMTvm3rdY+05tQVuuij+blRIzZbr1X\nVfXtMXyhSnoIxYTU82vUHkJkRQQLGEoePLorpbqHBkm7XnhOwLTNynWdT+cYUtV4\nABS8fKgI2wKBgGyU32K2hQNEZ+qT+ZpKnFBW7lTOpi13cH23KKiBBOp4/0fmWpF7\nPWO6ViVuRCkOkPseszbBizqLe9Sts4B7TZVNFMzpADEggRYWEb4W1Uwol0Trb2Sy\n35u+/xLexNGzP2hJUj6Z7KSyFokGEtu/IrgJwuuYswwJAaLmSdFEscwpAoGACU9b\numa+Rh6BI5KHIcxsRhNie8BTw74mno4POdNWFGl359iIuyGvGCPWi3IlA5yXuKrV\n3pYPw7POXpABqpIyfA/ld2m3qZJHcWG6KnuHvxYKstwxz6u7uHGTUB37khJWi+T9\nr0KyfRcZM07siN+cH3p+IqA86QwLhqE6LDEGr5ECgYBD7fh3hCawMgB5j8eWqJzV\nOWR44eXWTYS6LCo+bVvZCXLTvPmMCKAQ0rssB2a4lh4PO62t1OL9EvzHw9V09IBK\nibXM1vjZrbWD9pRLC/7aNceo87c7MYCGw56oJ3x5d6gvPiBqAZgf7sNNhYijxj5P\nDvuejo6xVAQzk8P4gkiw3g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ambikira-e-insper@perguntas-e-respostas-394021.iam.gserviceaccount.com",
+  "client_id": "103465168967086878510",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ambikira-e-insper%40perguntas-e-respostas-394021.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

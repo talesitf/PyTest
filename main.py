@@ -1,63 +1,41 @@
-import pygame as pg
+import variaveis
+from tela_inicial import tela_inicial
+from tela_jogo import tela_jogo
+from tela_score import tela_score
+from estandes import estandes
+import pygame
+import sys
 import asyncio
+import math
+import random
+import time
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 async def main():
-    screen = pg.display.set_mode((640, 480))
-    font = pg.font.Font(None, 32)
-    clock = pg.time.Clock()
-    input_box = pg.Rect(100, 100, 140, 32)
-    color_inactive = pg.Color('lightskyblue3')
-    color_active = pg.Color('dodgerblue2')
-    color = color_inactive
-    active = False
-    text = ''
-    done = False
+    pygame.init()
 
-    while not done:
-        for event in pg.event.get():
-            if event.type == pg.QUIT:
-                
-                with open("emails.txt", "a") as arquivo:
-                    arquivo.write(text)
+    janela = pygame.display.set_mode((variaveis.largura, variaveis.altura))
 
-                done = True
-            if event.type == pg.MOUSEBUTTONDOWN:
-                # If the user clicked on the input_box rect.
-                if input_box.collidepoint(event.pos):
-                    # Toggle the active variable.
-                    active = not active
-                else:
-                    active = False
-                # Change the current color of the input box.
-                color = color_active if active else color_inactive
-            if event.type == pg.KEYDOWN:
-                if active:
-                    if event.key == pg.K_RETURN:
-                        print(text)
-                        text = ''
-                    elif event.key == pg.K_BACKSPACE:
-                        text = text[:-1]
-                    elif event.key == pg.K_KP_ENTER:
-                        with open("emails.txt", "a") as arquivo:
-                            arquivo.write(text)
-                    else:
-                        text += event.unicode
+    pygame.display.set_caption(variaveis.nome_tela)
 
-        screen.fill((30, 30, 30))
-        # Render the current text.
-        txt_surface = font.render(text, True, color)
-        # Resize the box if the text is too long.
-        width = max(200, txt_surface.get_width()+10)
-        input_box.w = width
-        # Blit the text.
-        screen.blit(txt_surface, (input_box.x+5, input_box.y+5))
-        # Blit the input_box rect.
-        pg.draw.rect(screen, color, input_box, 2)
+    tela_atual = "estandes"
 
-        pg.display.flip()
-        clock.tick(30)
-        await asyncio.sleep(0)
+    while True:
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+        
+        # Controle de qual tela é exibida
+        if tela_atual == "estandes":
+            tela_atual = estandes(janela)
+        elif tela_atual == "inicio":
+            tela_atual = tela_inicial(janela)
+        elif tela_atual == "jogo":
+            tela_atual = tela_jogo(janela)
+        elif tela_atual == "score":
+            tela_atual = tela_score(janela)
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     asyncio.run(main())
